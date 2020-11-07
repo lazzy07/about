@@ -2,4 +2,5 @@
 
 ## Created by @lazzy07
 
-https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME>/badge.svg
+Build status
+[![Build Status](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME>/badge.svg)]
