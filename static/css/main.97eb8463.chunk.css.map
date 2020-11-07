@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/scss/app.scss"],"names":[],"mappings":"AAAA,KACE,+BAAiC,CAClC,kBASC,kCAAoC","file":"main.97eb8463.chunk.css","sourcesContent":["body {\n  font-family: \"Roboto\", sans-serif;\n}\n\nh1,\nh2,\nh3,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Open Sans\", sans-serif;\n}\n"]}
