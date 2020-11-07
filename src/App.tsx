@@ -1,8 +1,10 @@
 import React from 'react';
+import "./scss/app.scss";
 
-function App() {
+const App = () => {
   return (
     <div>
+      <h1>Hi, I'm Lasantha Madushan</h1>
       Hello world
     </div>
   );
