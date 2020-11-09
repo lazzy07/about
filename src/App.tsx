@@ -1,11 +1,16 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Homepage from './screens/Homepage';
 import "./scss/app.scss";
 
 const App = () => {
   return (
     <div>
-      <h1>Hi, I'm Lasantha Madushan</h1>
-      Hello world
+      <Switch>
+        <Route path="/">
+          <Homepage />
+        </Route>
+      </Switch>
     </div>
   );
 }
