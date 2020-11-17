@@ -1,7 +1,7 @@
 @import "./colors.scss";
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,5 +26,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
 }
