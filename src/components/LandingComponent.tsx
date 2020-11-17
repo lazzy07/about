@@ -11,7 +11,6 @@ export default function LandingComponent() {
       autoplay: true,
       renderer: "svg",
       loop: true,
-
     })
   }
 

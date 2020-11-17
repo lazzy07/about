@@ -5,7 +5,7 @@ import Header from './components/Header';
 import { HEADER_HEIGHT } from './constants';
 import Homepage from './screens/Homepage';
 import "./scss/app.scss";
-
+import "./scss/grid.scss"
 const App = () => {
   return (
     <div style={{ paddingTop: HEADER_HEIGHT }}>
