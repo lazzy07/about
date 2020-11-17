@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div style={{ paddingTop: HEADER_HEIGHT }}>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/about">
           <Homepage />
         </Route>
       </Switch>

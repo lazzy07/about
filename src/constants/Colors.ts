@@ -4,6 +4,6 @@ export const colors = {
 };
 
 export const defaultColors = {
-  DEFAULT_FONT_COLOR: colors.PINK,
-  DEFAULT_BACKGROUND_COLOR: colors.WHITE,
+  DEFAULT_FONT_COLOR: colors.WHITE,
+  DEFAULT_BACKGROUND_COLOR: colors.PINK,
 };
