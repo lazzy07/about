@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import BubblesBackground from './components/BubblesBackground';
 import Header from './components/Header';
 import { HEADER_HEIGHT } from './constants';
 import Homepage from './screens/Homepage';
@@ -14,6 +15,9 @@ const App = () => {
         </Route>
       </Switch>
       <Header />
+      <div style={{ zIndex: 1 }}>
+        <BubblesBackground />
+      </div>
     </div>
   );
 }

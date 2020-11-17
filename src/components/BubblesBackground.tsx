@@ -1,10 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Particles from 'react-particles-js';
 
 export default function BubblesBackground() {
+  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState(window.innerWidth);
+
+
+  const changeHeight = () => {
+    document.addEventListener("resize", () => {
+      setHeight(window.innerHeight)
+      setWidth(window.innerWidth)
+    })
+  }
+
+  useEffect(changeHeight, [])
+
   return (
-    <div>
+    <div style={{ height, width, position: "fixed", top: 0, zIndex: -100 }}>
       <Particles
+
+        style={{ zIndex: 0 }}
+        height={"100vh"}
+        width={"100%"}
         params={{
           "particles": {
             "number": {
