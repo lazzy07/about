@@ -1,12 +1,14 @@
 import React from 'react'
-import LandingComponent from '../components/LandingComponent'
-import ThingsIDoSection from '../components/ThingsIDoSection'
+import LandingComponent from '../sections/LandingComponent'
+import SoftwaresAndTech from '../sections/SoftwaresAndTech'
+import ThingsIDoSection from '../sections/ThingsIDoSection'
 
 export default function Homepage() {
   return (
     <div>
       <LandingComponent />
       <ThingsIDoSection />
+      <SoftwaresAndTech />
     </div>
   )
 }

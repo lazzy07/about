@@ -2,6 +2,7 @@ export const colors = {
   PINK: "#fa2b53",
   WHITE: "#ffffff",
   GREY: "#555555",
+  YELLOW: "#fafa72",
 };
 
 export const defaultColors = {
