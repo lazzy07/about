@@ -5,7 +5,7 @@ import { ICON_TYPES } from '../interfaces/IconTypes'
 import "../scss/icon.scss"
 export default function SoftwaresAndTech() {
   const renderIcon = (icon: ICON_TYPES) => {
-    return <div id={icon} className="col-sm-2 ">
+    return <div key={icon} className="col-sm-2 ">
       <IconComponent
         containerStyles={{ padding: 10 }}
         animations

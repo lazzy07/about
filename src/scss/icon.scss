@@ -1,8 +1,3 @@
-.anim-icon {
-  transform: translateY(0px);
-  animation: anim 2s infinite both linear;
-}
-
 @keyframes anim {
   25% {
     transform: translateY(2%) translateZ(0);
@@ -22,5 +17,6 @@
 }
 
 .anim-icon img {
-  animation: anim-img 2s infinite both linear;
+  transform: translateY(0px);
+  animation: anim-img 2s infinite both linear, anim 2s infinite both linear;
 }
