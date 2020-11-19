@@ -15,7 +15,7 @@ interface Props {
 export default function IconComponent(
   props: Props
 ) {
-  const images = require.context("../img", true);
+  const images = require.context("../img/icons", true);
 
   const titleCase = (str: string) => {
     var splitStr = str.toLowerCase().split(' ');

@@ -4,13 +4,22 @@ import { defaultColors } from '../constants/Colors'
 import { ICON_TYPES } from '../interfaces/IconTypes'
 import "../scss/icon.scss"
 export default function SoftwaresAndTech() {
-  const renderIcon = (icon: ICON_TYPES, index?: number) => {
-    return <div className="col-sm-2 "><IconComponent containerStyles={{ padding: 10 }} animations icon={icon} color="yellow" title style={{ maxWidth: "100px" }} /></div>
+  const renderIcon = (icon: ICON_TYPES) => {
+    return <div id={icon} className="col-sm-2 ">
+      <IconComponent
+        containerStyles={{ padding: 10 }}
+        animations
+        icon={icon}
+        color="yellow"
+        title
+        style={{ maxWidth: "100px" }}
+      />
+    </div>
   }
 
   const renderIcons = (icons: ICON_TYPES[]) => {
-    return icons.map((ele, index) => {
-      return renderIcon(ele, index)
+    return icons.map((ele) => {
+      return renderIcon(ele)
     })
   }
 
