@@ -35,7 +35,7 @@ export default function ThingsIDoSection() {
   }, [])
 
   const renderSkillItem = (id: string, title: string, text: string) => {
-    return <div className="col-md-4" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+    return <div className="col-sm-12 col-md-4" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
       <div style={{ maxWidth: 250 }} id={id}></div>
       <div style={{ fontWeight: "bolder", fontSize: "2em", color: defaultColors.DEFAULT_BACKGROUND_COLOR, paddingTop: 10, paddingBottom: 20 }}>
         <h3>{title}</h3>

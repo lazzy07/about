@@ -9,6 +9,7 @@ interface Props {
   animations?: boolean;
   style?: React.CSSProperties;
   textStyles?: React.CSSProperties;
+  containerStyles?: React.CSSProperties;
 }
 
 export default function IconComponent(
@@ -19,16 +20,13 @@ export default function IconComponent(
   const titleCase = (str: string) => {
     var splitStr = str.toLowerCase().split(' ');
     for (var i = 0; i < splitStr.length; i++) {
-      // You do not need to check if i is larger than splitStr length, as your for does that for you
-      // Assign it back to the array
       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
     }
-    // Directly return the joined string
     return splitStr.join(' ');
   }
 
   return (
-    <div style={{ display: "inline-block" }}>
+    <div className={props.animations ? "anim-icon" : ""} style={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", ...props.containerStyles }}>
       <img alt="" src={images(`./${props.icon}.png`).default} style={{
         filter: props.color === "pink" ? "invert(33%) sepia(72%) saturate(4948%) hue-rotate(332deg) brightness(98%) contrast(100%)" : props.color === "yellow" ? "invert(94%) sepia(48%) saturate(834%) hue-rotate(335deg) brightness(111%) contrast(96%)" :
           "invert(100%) sepia(100%) saturate(2%) hue-rotate(329deg) brightness(102%) contrast(101%)",
