@@ -16,7 +16,7 @@ export default function BubblesBackground() {
   useEffect(changeHeight, [])
 
   return (
-    <div style={{ height, width, position: "fixed", top: 0, zIndex: -100 }}>
+    <div style={{ height, width, position: "fixed", top: 0, zIndex: -100, transform: "translate3d(0,0,0)" }}>
       <Particles
 
         style={{ zIndex: 0 }}

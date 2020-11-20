@@ -22,9 +22,10 @@ export default function LandingComponent() {
         <div style={{ height: "100vh", zIndex: 50 }} id="avatar-container"></div>
       </div>
       <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "100%" }}>
-        <h1 style={{ fontSize: "5vw", color: defaultColors.DEFAULT_FONT_COLOR, textAlign: "center", zIndex: 100 }}>
-          Hello, I'm Lasantha Madushan
+        <h1 style={{ fontSize: "2em", color: defaultColors.DEFAULT_FONT_COLOR, textAlign: "center", zIndex: 100, fontWeight: "normal", paddingBottom: 30, marginBottom: 0 }}>
+          Hello, I'm
         </h1>
+        <div style={{ fontFamily: "signature", fontWeight: "bolder", fontSize: "6em", textAlign: "center", color: defaultColors.DEFAULT_FONT_COLOR }}>Lasantha Madushan</div>
       </div>
     </div>
   )

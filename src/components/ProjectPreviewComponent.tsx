@@ -84,7 +84,7 @@ export default function ProjectPreviewComponent(props: Props) {
 
   return (
     <div ref={containerRef} className="container" style={{
-      transformStyle: "preserve-3d", paddingTop: 60, paddingBottom: 60, position: "relative"
+      transformStyle: "preserve-3d", paddingTop: 60, paddingBottom: 60, position: "relative", perspective: "1000px"
     }}>
       <div
         ref={cardRef}

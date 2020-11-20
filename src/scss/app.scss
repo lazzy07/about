@@ -1,5 +1,10 @@
 @import "./colors.scss";
 
+@font-face {
+  font-family: "signature";
+  src: url("./fonts/Sugar Candy.ttf");
+}
+
 body {
   font-family: "Roboto", sans-serif !important;
   margin: 0;
@@ -7,7 +12,6 @@ body {
   border: 0;
   outline: 0;
   background-color: $DEFAULT_BACKGROUND_COLOR;
-  perspective: 1000px;
   overflow-x: hidden;
 }
 

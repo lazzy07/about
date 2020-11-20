@@ -28,13 +28,14 @@ export default function SoftwaresAndTech() {
       <div style={{ paddingBottom: 120 }}>
         <h1 style={{ fontSize: "1.5em", color: defaultColors.DEFAULT_FONT_COLOR, paddingBottom: 20, textAlign: "center" }}>Programming Languages I Use</h1>
         <div className="row center-xs">
-          {renderIcons(["blender", "unreal engine", "unity", "substance designer", "substance painter", "gamemaker"])}
+          {renderIcons(["cpp", "opengl", "typescript", "python", "java", "vulkan", "javascript", "webgl"])}
+
         </div>
       </div>
       <div style={{ paddingBottom: 120 }}>
         <h1 style={{ fontSize: "1.5em", color: defaultColors.DEFAULT_FONT_COLOR, paddingBottom: 20, textAlign: "center" }}>Game Development & 3D Rendering Softwares I Work With</h1>
         <div className="row center-xs">
-          {renderIcons(["cpp", "opengl", "typescript", "python", "java", "vulkan", "javascript", "webgl"])}
+          {renderIcons(["blender", "unreal engine", "unity", "substance designer", "substance painter", "gamemaker"])}
         </div>
       </div>
       <div style={{ paddingBottom: 120 }}>
