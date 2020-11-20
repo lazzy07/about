@@ -2,26 +2,19 @@ import React, { createRef, useEffect } from 'react'
 import { defaultColors } from '../constants/Colors';
 import { ICON_TYPES } from '../interfaces/IconTypes';
 import IconComponent from './IconComponent';
-import Girl01 from "../img/projects/girl/girl01.png";
-import Girl01Depth from "../img/projects/girl/girl01_disp.jpg";
 import Button from './Button';
-import { Application, filters, Sprite } from "pixi.js";
 
 interface Props {
-
+  title: string;
+  description: string;
+  image: string;
+  icons: ICON_TYPES[];
+  isVideo?: boolean;
 }
-
-const depthMap = Sprite.from(Girl01Depth);
-const displaceFilter = new filters.DisplacementFilter(depthMap);
 
 export default function ProjectPreviewComponent(props: Props) {
   const containerRef = createRef<HTMLDivElement>();
   const cardRef = createRef<HTMLDivElement>();
-  const imageRef = createRef<HTMLDivElement>();
-  const rendererRef = createRef<HTMLDivElement>();
-  const img = Sprite.from(Girl01);
-
-  const imgRes = img.width / img.height;
 
   const renderIcon = (icon: ICON_TYPES) => {
     return <div key={icon} className="col-xs-3">
@@ -52,11 +45,6 @@ export default function ProjectPreviewComponent(props: Props) {
 
       const xAxis = (window.innerWidth / 2 - e.pageX) / effectPowerX;
       const yAxis = (window.innerHeight / 2 - e.pageY) / effectPowerY;
-
-      if (displaceFilter) {
-        displaceFilter.scale.x = (window.innerWidth / 2 - e.clientX) / 100;
-        displaceFilter.scale.y = (window.innerWidth / 2 - e.clientY) / 100;
-      }
 
       if (cref) {
         cref.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
@@ -90,36 +78,9 @@ export default function ProjectPreviewComponent(props: Props) {
         ref.addEventListener("mouseenter", onMouseEnter);
       }
     }
-  }, [containerRef, cardRef, imageRef]);
-
-  useEffect(() => {
-    const app = new Application({ width: rendererRef.current!.clientWidth, height: rendererRef.current!.clientHeight });
-    rendererRef.current?.appendChild(app.renderer.view);
-
-    app.stage.addChild(depthMap);
-
-    displaceFilter.scale.x = 0;
-    displaceFilter.scale.y = 0;
-    img.height = app.renderer.height;
-    img.width = img.height * imgRes;
+  }, [containerRef, cardRef]);
 
 
-
-    app.stage.filters = [displaceFilter];
-    app.stage.addChild(img);
-
-    const onResizeRenderer = (_: UIEvent) => {
-      setTimeout(() => {
-        app.renderer.resize(rendererRef.current!.clientWidth, imageRef.current!.clientHeight)
-      }, 500)
-    }
-
-    window.addEventListener("resize", onResizeRenderer)
-
-    return () => {
-      window.removeEventListener("resize", onResizeRenderer);
-    }
-  }, [rendererRef, img, imageRef, imgRes])
 
   return (
     <div ref={containerRef} className="container" style={{
@@ -127,7 +88,7 @@ export default function ProjectPreviewComponent(props: Props) {
     }}>
       <div
         ref={cardRef}
-        className="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1"
+        className="col-md-10 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1"
         style={{
           filter: "drop-shadow( 9px 9px 8px rgba(0, 0, 0, .4))",
           backgroundColor: defaultColors.DEFAULT_FONT_COLOR,
@@ -135,24 +96,23 @@ export default function ProjectPreviewComponent(props: Props) {
           overflow: "hidden"
         }}>
         <div className="row" style={{ zIndex: 2, position: "relative", transformStyle: "preserve-3d", perspective: "1000px" }}>
-          <div ref={imageRef} className="col-sm-6 col-xs-12" style={{ overflow: "hidden", padding: 0, marginBottom: -4, zIndex: 1 }}>
-            {/* <img src={Girl01} alt="" width="100%" /> */}
-            <div ref={rendererRef} style={{ width: "100%", height: 480, backgroundColor: "khaki" }}></div>
+          <div className="col-sm-6 col-md-7 col-xs-12" style={{ overflow: "hidden", padding: 0, marginBottom: -4, zIndex: 1, display: "flex", justifyContent: "center" }}>
+            <img src={props.image} alt="" height="480px" style={{ transform: "translate(-10%,0)" }} />
           </div>
-          <div className="col-sm-6 col-xs-12" style={{ padding: 50, zIndex: 2 }}>
+          <div className="col-sm-6 col-md-5 col-xs-12" style={{ padding: 50, zIndex: 2 }}>
             <h1
               style={{ color: defaultColors.DEFAULT_BACKGROUND_COLOR, fontWeight: "bolder", fontSize: "2.1rem", filter: `drop-shadow(3px 3px 2px ${defaultColors.DEFAULT_BACKGROUND_COLOR}45` }}
             >
-              Girl Protrait
+              {props.title}
             </h1>
             <p style={{ paddingTop: 10, paddingBottom: 20, color: defaultColors.SECONDARY_FONT_COLOR }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laudantium dicta est repudiandae alias at! Obcaecati voluptatum nihil ad incidunt ullam praesentium laudantium
+              {props.description}
             </p>
             <div className="row">
-              {renderIcons(["blender", "substance designer", "substance painter"])}
+              {renderIcons(props.icons)}
             </div>
             <div style={{ paddingTop: 30 }}>
-              <Button />
+              <Button title={"Read More"} onClick={() => { }} />
             </div>
           </div>
         </div>
