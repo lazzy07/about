@@ -1,19 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ProjectPreviewComponent from '../components/ProjectPreviewComponent'
 import { defaultColors } from '../constants/Colors'
-import R8remake from "../img/projects/carnew/r8remake.png";
+
+const data = require.context("../data/project_data");
+let projects = new Set<string>();
 
 export default function ProjectSection() {
-  return (
-    <div className="container" style={{ paddingTop: 120, paddingBottom: 120 }}>
-      <h1 style={{ fontSize: "2rem", fontWeight: "bolder", color: defaultColors.DEFAULT_FONT_COLOR }}>Projects</h1>
-      <ProjectPreviewComponent
-        title={"Audi R8 LMS Remake"}
-        description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, magnam voluptatem quidem"}
-        icons={["blender", "substance designer", "substance painter", "photoshop"]}
-        image={R8remake}
-      />
+  const [posts, setPosts] = useState<any[]>([]);
+  const getAllProjects = () => {
+    data.keys().forEach(e => {
+      const data = e.split("/")[1];
+      projects.add(data);
+    })
+  }
 
-    </div>
+  getAllProjects();
+
+  const readData = (projectName: string) => {
+    return data(`./${projectName}/data.json`);
+  }
+
+  const renderProjectPreview = () => {
+    projects.forEach(async e => {
+      const projectData = readData(e);
+
+      const projectName = projectData.name;
+      const previewPicture = data(`./${projectName}/${projectData.image}`).default;
+
+      const post = <div key={e} className="container" style={{ paddingTop: 120, paddingBottom: 120 }}>
+        <h1 style={{ fontSize: "2rem", fontWeight: "bolder", color: defaultColors.DEFAULT_FONT_COLOR }}>Projects</h1>
+        <ProjectPreviewComponent
+          title={projectName}
+          description={projectData.preview}
+          icons={projectData.icons}
+          isVideo={projectData.isVideo}
+          image={previewPicture}
+        />
+      </div>
+
+      setPosts(prevState => {
+        return [...prevState, post]
+      })
+    })
+  }
+
+  useEffect(renderProjectPreview, [])
+
+  return (
+    <>
+      {posts}
+    </>
   )
 }
