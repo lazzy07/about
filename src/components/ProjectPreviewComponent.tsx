@@ -3,8 +3,10 @@ import { defaultColors } from '../constants/Colors';
 import { ICON_TYPES } from '../interfaces/IconTypes';
 import IconComponent from './IconComponent';
 import Button from './Button';
+import { useHistory } from "react-router";
 
 interface Props {
+  id: string;
   title: string;
   description: string;
   image: string;
@@ -15,7 +17,7 @@ interface Props {
 export default function ProjectPreviewComponent(props: Props) {
   const containerRef = createRef<HTMLDivElement>();
   const cardRef = createRef<HTMLDivElement>();
-
+  const history = useHistory();
   const renderIcon = (icon: ICON_TYPES) => {
     return <div key={icon} className="col-xs-3">
       <IconComponent
@@ -112,7 +114,7 @@ export default function ProjectPreviewComponent(props: Props) {
               {renderIcons(props.icons)}
             </div>
             <div style={{ paddingTop: 30 }}>
-              <Button title={"Read More"} onClick={() => { }} />
+              <Button title={"Read More"} onClick={() => history.push("/project/" + props.id)} />
             </div>
           </div>
         </div>

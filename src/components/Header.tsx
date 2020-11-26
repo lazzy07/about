@@ -3,7 +3,7 @@ import { HEADER_HEIGHT } from '../constants'
 import { defaultColors } from '../constants/Colors'
 
 function renderLink(title: string) {
-  return <h3 style={{ color: defaultColors.DEFAULT_FONT_COLOR, padding: 5, marginRight: 10, marginLeft: 10, cursor: "pointer", fontSize: 15 }}>{title}</h3>
+  return <h3 style={{ color: defaultColors.DEFAULT_FONT_COLOR, padding: 5, marginRight: 10, marginLeft: 10, cursor: "pointer", fontSize: 15, zIndex: 2000 }}>{title}</h3>
 }
 
 function renderLinks() {

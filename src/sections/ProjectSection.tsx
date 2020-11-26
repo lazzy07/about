@@ -21,15 +21,16 @@ export default function ProjectSection() {
   }
 
   const renderProjectPreview = () => {
-    projects.forEach(async e => {
+    projects.forEach(e => {
       const projectData = readData(e);
 
       const projectName = projectData.name;
-      const previewPicture = data(`./${projectName}/${projectData.image}`).default;
+      const previewPicture = data(`./${e}/${projectData.image}`).default;
 
       const post = <div key={e} className="container" style={{ paddingTop: 120, paddingBottom: 120 }}>
         <h1 style={{ fontSize: "2rem", fontWeight: "bolder", color: defaultColors.DEFAULT_FONT_COLOR }}>Projects</h1>
         <ProjectPreviewComponent
+          id={e}
           title={projectName}
           description={projectData.preview}
           icons={projectData.icons}
