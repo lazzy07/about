@@ -8,14 +8,17 @@ import "./scss/grid.scss"
 import "./scss/app.scss";
 import Project from './screens/Project';
 import { PROJECT, ROOT } from './routes';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <div style={{ paddingTop: HEADER_HEIGHT }}>
-      <Switch>
-        <Route exact path={PROJECT} component={Project} />
-        <Route exact path={ROOT} component={Homepage} />
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route exact path={PROJECT} component={Project} />
+          <Route exact path={ROOT} component={Homepage} />
+        </Switch>
+      </ScrollToTop>
       <Header />
       <div style={{ zIndex: 1 }}>
         <BubblesBackground />

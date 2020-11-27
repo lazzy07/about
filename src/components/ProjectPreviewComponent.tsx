@@ -4,6 +4,7 @@ import { ICON_TYPES } from '../interfaces/IconTypes';
 import IconComponent from './IconComponent';
 import Button from './Button';
 import { useHistory } from "react-router";
+import { ROOT } from '../routes';
 
 interface Props {
   id: string;
@@ -114,7 +115,7 @@ export default function ProjectPreviewComponent(props: Props) {
               {renderIcons(props.icons)}
             </div>
             <div style={{ paddingTop: 30 }}>
-              <Button title={"Read More"} onClick={() => history.push("/project/" + props.id)} />
+              <Button title={"Read More"} onClick={() => history.push(ROOT + "/project/" + props.id)} />
             </div>
           </div>
         </div>
