@@ -9,6 +9,7 @@ import "./scss/app.scss";
 import Project from './screens/Project';
 import { PROJECT, ROOT } from './routes';
 import ScrollToTop from './components/ScrollToTop';
+import MousePointerComponent from './components/MousePointerComponent';
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
         </Switch>
       </ScrollToTop>
       <Header />
-      <div style={{ zIndex: 1 }}>
+      <div style={{ zIndex: -1 }}>
+        <MousePointerComponent />
         <BubblesBackground />
       </div>
     </div>
