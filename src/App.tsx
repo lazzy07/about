@@ -22,7 +22,7 @@ const App = () => {
       </ScrollToTop>
       <Header />
       <div style={{ zIndex: -1 }}>
-        <MousePointerComponent />
+        {/* <MousePointerComponent /> */}
         <BubblesBackground />
       </div>
     </div>

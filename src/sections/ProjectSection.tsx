@@ -37,6 +37,7 @@ export default function ProjectSection() {
           isVideo={projectData.isVideo}
           image={previewPicture}
         />
+
       </div>
 
       setPosts(prevState => {
