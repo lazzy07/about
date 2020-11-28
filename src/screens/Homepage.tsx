@@ -1,4 +1,5 @@
 import React from 'react'
+import CustomerTestimonials from '../sections/CustomerTestimonials'
 import LandingComponent from '../sections/LandingComponent'
 import ProjectSection from '../sections/ProjectSection'
 import SoftwaresAndTech from '../sections/SoftwaresAndTech'
@@ -11,6 +12,7 @@ export default function Homepage() {
       <ThingsIDoSection />
       <ProjectSection />
       <SoftwaresAndTech />
+      <CustomerTestimonials />
     </div>
   )
 }

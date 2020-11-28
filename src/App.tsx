@@ -9,7 +9,6 @@ import "./scss/app.scss";
 import Project from './screens/Project';
 import { PROJECT, ROOT } from './routes';
 import ScrollToTop from './components/ScrollToTop';
-import MousePointerComponent from './components/MousePointerComponent';
 
 const App = () => {
   return (
