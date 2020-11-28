@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { DataFile } from '../interfaces/DataFile';
 import IconComponent from '../components/IconComponent';
 import { ICON_TYPES } from '../interfaces/IconTypes';
+import Button from '../components/Button';
 
 const data = require.context("../data/project_data");
 
@@ -60,6 +61,16 @@ export default function Project() {
   const projectData = readData(currentProject);
   const previewPicture = data(`./${currentProject}/${projectData.image}`).default;
 
+  const onClickLink = (link: string) => {
+    window.open(link);
+  }
+
+  const renderLinks = () => {
+    return projectData.links.map(e => {
+      return <Button title={e.title} onClick={() => onClickLink(e.url)} />
+    })
+  }
+
   return (
     <div
       style={{
@@ -91,7 +102,7 @@ export default function Project() {
             </div>
           </div>
           <div>
-
+            {renderLinks()}
           </div>
         </div>
       </div>
