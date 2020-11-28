@@ -56,7 +56,9 @@ export default function ThingsIDoSection() {
 
   return (
     <div className="container-fluid" style={{ backgroundColor: defaultColors.DEFAULT_FONT_COLOR, minHeight: "200px", paddingTop: 30, paddingBottom: 30 }}>
-      <h1 style={{ color: defaultColors.DEFAULT_BACKGROUND_COLOR, fontSize: "3em", paddingLeft: 30 }}>What I do,</h1>
+      <h1 style={{ color: defaultColors.DEFAULT_BACKGROUND_COLOR, fontSize: "3em", paddingLeft: 30, textAlign: "center", paddingTop: 20 }}>
+        WHAT I DO
+        </h1>
       <div style={{ paddingTop: 40, paddingBottom: 40 }}>
         {renderSkillsSection()}
       </div>

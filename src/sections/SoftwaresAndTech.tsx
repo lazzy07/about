@@ -25,11 +25,11 @@ export default function SoftwaresAndTech() {
 
   return (
     <div className="container-fluid" style={{ padding: 40 }}>
+      <div></div>
       <div style={{ paddingBottom: 120 }}>
         <h1 style={{ fontSize: "1.5em", color: defaultColors.DEFAULT_FONT_COLOR, paddingBottom: 20, textAlign: "center" }}>Programming Languages I Use</h1>
         <div className="row center-xs">
           {renderIcons(["cpp", "opengl", "typescript", "python", "java", "vulkan", "javascript", "webgl"])}
-
         </div>
       </div>
       <div style={{ paddingBottom: 120 }}>

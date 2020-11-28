@@ -76,17 +76,18 @@ export default function Testimonial(props: Props) {
           filter: "drop-shadow( 9px 9px 8px rgba(0, 0, 0, .4))",
           backgroundColor: defaultColors.DEFAULT_FONT_COLOR,
           borderRadius: "80px 20px 80px 20px",
-          overflow: "hidden"
+          overflow: "hidden",
+          minHeight: "400px"
         }}>
         <div className="row" style={{ zIndex: 2, position: "relative" }}>
-          <div className="col-sm-5 col-xs-12" style={{ overflow: "hidden", padding: 0, marginBottom: -4, zIndex: 1, display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", height: "400px" }}>
-            <img src={props.image} alt="" style={{ maxHeight: "120px", borderRadius: "50%", border: `4px solid ${defaultColors.DEFAULT_BACKGROUND_COLOR}` }} />
+          <div className="col-sm-5 col-xs-12" style={{ overflow: "hidden", padding: 0, marginBottom: -4, zIndex: 1, display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+            <img src={props.image} alt="" style={{ maxHeight: "120px", borderRadius: "50%", border: `4px solid ${defaultColors.DEFAULT_BACKGROUND_COLOR}`, marginTop: 20 }} />
             <h3 style={{ paddingTop: 10, paddingBottom: 10, color: defaultColors.DEFAULT_BACKGROUND_COLOR, textAlign: "center" }}>{props.data.name}</h3>
             <div style={{ paddingBottom: 20, color: defaultColors.SECONDARY_FONT_COLOR, textAlign: "center" }}>
               {renderTitles()}
             </div>
           </div>
-          <div className="col-sm-7 col-xs-12" style={{ padding: 50, zIndex: 2, display: "flex", alignItems: "center", color: defaultColors.SECONDARY_FONT_COLOR, flexDirection: "column", justifyContent: "center" }}>
+          <div className="col-sm-7 col-xs-12 anim-icon" style={{ padding: 50, zIndex: 2, display: "flex", alignItems: "center", color: defaultColors.SECONDARY_FONT_COLOR, flexDirection: "column", justifyContent: "center" }}>
             <img src={Quote} width={80} alt="" style={{ padding: 20 }} />
             {props.data.description}
           </div>
