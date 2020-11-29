@@ -1,22 +1,38 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.97eb8463.chunk.css",
-    "main.js": "/about/static/js/main.17460283.chunk.js",
-    "main.js.map": "/about/static/js/main.17460283.chunk.js.map",
-    "runtime-main.js": "/about/static/js/runtime-main.575917f3.js",
-    "runtime-main.js.map": "/about/static/js/runtime-main.575917f3.js.map",
-    "static/js/2.aba0980c.chunk.js": "/about/static/js/2.aba0980c.chunk.js",
-    "static/js/2.aba0980c.chunk.js.map": "/about/static/js/2.aba0980c.chunk.js.map",
-    "static/js/3.40d53e0a.chunk.js": "/about/static/js/3.40d53e0a.chunk.js",
-    "static/js/3.40d53e0a.chunk.js.map": "/about/static/js/3.40d53e0a.chunk.js.map",
+    "main.css": "/about/static/css/main.1089667f.chunk.css",
+    "main.js": "/about/static/js/main.0b233774.chunk.js",
+    "main.js.map": "/about/static/js/main.0b233774.chunk.js.map",
+    "runtime-main.js": "/about/static/js/runtime-main.f2852605.js",
+    "runtime-main.js.map": "/about/static/js/runtime-main.f2852605.js.map",
+    "static/js/2.19af3984.chunk.js": "/about/static/js/2.19af3984.chunk.js",
+    "static/js/2.19af3984.chunk.js.map": "/about/static/js/2.19af3984.chunk.js.map",
+    "static/js/3.eb57097e.chunk.js": "/about/static/js/3.eb57097e.chunk.js",
+    "static/js/3.eb57097e.chunk.js.map": "/about/static/js/3.eb57097e.chunk.js.map",
     "index.html": "/about/index.html",
-    "static/css/main.97eb8463.chunk.css.map": "/about/static/css/main.97eb8463.chunk.css.map",
-    "static/js/2.aba0980c.chunk.js.LICENSE.txt": "/about/static/js/2.aba0980c.chunk.js.LICENSE.txt"
+    "static/css/main.1089667f.chunk.css.map": "/about/static/css/main.1089667f.chunk.css.map",
+    "static/js/2.19af3984.chunk.js.LICENSE.txt": "/about/static/js/2.19af3984.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/about/static/media/Sugar Candy.f0b22fb7.ttf",
+    "static/media/angular.png": "/about/static/media/angular.2d708291.png",
+    "static/media/electron.png": "/about/static/media/electron.3c24acc9.png",
+    "static/media/gamemaker.png": "/about/static/media/gamemaker.9225bcf9.png",
+    "static/media/image1.jpg": "/about/static/media/image1.968f39f7.jpg",
+    "static/media/image2.jpg": "/about/static/media/image2.ee79ba0d.jpg",
+    "static/media/java.png": "/about/static/media/java.1608e1cf.png",
+    "static/media/preview.jpg": "/about/static/media/preview.df47eddd.jpg",
+    "static/media/preview.png": "/about/static/media/preview.9999c930.png",
+    "static/media/quote.3a94ee32.svg": "/about/static/media/quote.3a94ee32.svg",
+    "static/media/react native.png": "/about/static/media/react native.22f2fc97.png",
+    "static/media/react.png": "/about/static/media/react.22f2fc97.png",
+    "static/media/redis.png": "/about/static/media/redis.05021ecf.png",
+    "static/media/substance painter.png": "/about/static/media/substance painter.8cce3924.png",
+    "static/media/threejs.png": "/about/static/media/threejs.b2660e44.png",
+    "static/media/unreal engine.png": "/about/static/media/unreal engine.ac084b0d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.575917f3.js",
-    "static/js/2.aba0980c.chunk.js",
-    "static/css/main.97eb8463.chunk.css",
-    "static/js/main.17460283.chunk.js"
+    "static/js/runtime-main.f2852605.js",
+    "static/js/2.19af3984.chunk.js",
+    "static/css/main.1089667f.chunk.css",
+    "static/js/main.0b233774.chunk.js"
   ]
 }
