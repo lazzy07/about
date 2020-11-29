@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import AchievementsSection from '../sections/AchievementsSection'
 import CustomerTestimonials from '../sections/CustomerTestimonials'
 import LandingComponent from '../sections/LandingComponent'
@@ -13,8 +14,9 @@ export default function Homepage() {
       <ThingsIDoSection />
       <ProjectSection />
       <AchievementsSection />
-      <SoftwaresAndTech />
       <CustomerTestimonials />
+      <SoftwaresAndTech />
+      <Footer />
     </div>
   )
 }

@@ -1,20 +1,23 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { HEADER_HEIGHT } from '../constants'
 import { defaultColors } from '../constants/Colors'
-
-function renderLink(title: string) {
-  return <h3 style={{ color: defaultColors.DEFAULT_FONT_COLOR, padding: 5, marginRight: 10, marginLeft: 10, cursor: "pointer", fontSize: 15, zIndex: 2000 }}>{title}</h3>
-}
-
-function renderLinks() {
-  return <div style={{ display: "flex" }}>
-    {renderLink("Home")}
-    {renderLink("Projects")}
-    {renderLink("About Me")}
-  </div>
-}
+import { ROOT } from '../routes'
 
 export default function Header() {
+  const history = useHistory();
+  function renderLink(title: string) {
+    return <h3 onClick={() => history.push(ROOT)} style={{ color: defaultColors.DEFAULT_FONT_COLOR, padding: 5, marginRight: 10, marginLeft: 10, cursor: "pointer", fontSize: 15, zIndex: 2000 }}>{title}</h3>
+  }
+
+  function renderLinks() {
+    return <div style={{ display: "flex" }}>
+      {renderLink("Home")}
+      {/* {renderLink("Projects")}
+      {renderLink("About Me")} */}
+    </div>
+  }
+
   return (
     <div style={{
       position: "fixed",
