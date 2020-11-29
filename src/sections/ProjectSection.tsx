@@ -27,8 +27,7 @@ export default function ProjectSection() {
       const projectName = projectData.name;
       const previewPicture = data(`./${e}/${projectData.image}`).default;
 
-      const post = <div key={e} className="container" style={{ paddingTop: 120, paddingBottom: 120 }}>
-        <h1 style={{ fontSize: "3em", fontWeight: "bolder", color: defaultColors.DEFAULT_FONT_COLOR, textAlign: "center" }}>MY PROJECTS</h1>
+      const post = <div key={e}>
         <ProjectPreviewComponent
           id={e}
           title={projectName}
@@ -50,6 +49,7 @@ export default function ProjectSection() {
 
   return (
     <>
+      <h1 style={{ fontSize: "3em", fontWeight: "bolder", color: defaultColors.DEFAULT_FONT_COLOR, textAlign: "center", paddingTop: 120 }}>MY PROJECTS</h1>
       {posts}
     </>
   )

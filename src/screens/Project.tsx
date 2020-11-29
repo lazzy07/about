@@ -5,6 +5,9 @@ import { DataFile } from '../interfaces/DataFile';
 import IconComponent from '../components/IconComponent';
 import { ICON_TYPES } from '../interfaces/IconTypes';
 import Button from '../components/Button';
+import Footer from '../components/Footer';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const data = require.context("../data/project_data");
 
@@ -17,7 +20,8 @@ export default function Project() {
   const currentProject = location.pathname.split("/")[3];
   // const [files, setFiles] = useState<any[]>([]);
   const [images, setImages] = useState<any[]>([]);
-  console.log(images);
+
+
   const renderIcon = (icon: ICON_TYPES) => {
     return <div key={icon} className="col-xs-3">
       <IconComponent
@@ -39,7 +43,8 @@ export default function Project() {
   }
 
   useEffect(() => {
-    const projectPath = "./" + currentProject + "/";
+    const projectPath = "./" + currentProject;
+
     const imagesPath = projectPath + "/preview/";
 
     data.keys().forEach(e => {
@@ -71,6 +76,23 @@ export default function Project() {
     })
   }
 
+  const renderPreviewImg = () => {
+    return projectData.isVideo ? <><video width="100%" loop autoPlay muted><source src={previewPicture} type="video/mp4" /></video></> : <><img src={previewPicture} alt="" /></>
+  }
+
+  const renderImages = (): any => {
+    return images.map((e, index) => {
+      return <><img key={index} src={data(e).default} alt="" /></>
+    })
+  }
+
+  const renderCarousel = () => {
+    return <Carousel infiniteLoop autoPlay={projectData.autoPlay} swipeable width="100%" showArrows={true}>
+      {renderPreviewImg()}
+      {renderImages()}
+    </Carousel>
+  }
+
   return (
     <div
       style={{
@@ -81,18 +103,18 @@ export default function Project() {
         overflowX: "hidden",
         backgroundColor: defaultColors.DEFAULT_FONT_COLOR,
         zIndex: 10000,
-        paddingBottom: "200px",
       }}>
       <div>
-        <img src={previewPicture} alt="" width="100%" />
+
+        {renderCarousel()}
       </div>
-      <div style={{ paddingLeft: 20, paddingRight: 20, paddingTop: 40 }}>
+      <div style={{ paddingLeft: 20, paddingRight: 20, paddingTop: 40, paddingBottom: 70 }}>
         <div>
           <h1 style={{ color: defaultColors.DEFAULT_BACKGROUND_COLOR, fontSize: "3em", padding: 10 }}>{projectData.name}</h1>
         </div>
         <div style={{ color: defaultColors.SECONDARY_FONT_COLOR, paddingTop: "30px" }}>
           <div className="row">
-            <div className="col-sm-12 col-md-8" style={{ paddingBottom: 40 }}>
+            <div className="col-sm-12 col-md-8" style={{ paddingBottom: 40, paddingLeft: 30 }}>
               <p dangerouslySetInnerHTML={{ __html: projectData.description }}></p>
             </div>
             <div className="col-sm-12 col-md-4">
@@ -101,12 +123,12 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div>
+          <div style={{ paddingLeft: 30, paddingTop: 30 }}>
             {renderLinks()}
           </div>
         </div>
       </div>
-
+      <Footer />
     </div>
   )
 }

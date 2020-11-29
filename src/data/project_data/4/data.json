@@ -1,0 +1,11 @@
+{
+  "name": "Audi R8 Remake",
+  "icons": ["blender", "substance painter", "photoshop"],
+  "image": "r8remake.jpg",
+  "isVideo": false,
+  "autoPlay": true,
+  "preview": "I reused the car model I created few years ago and tried to redo a render to show my rendering skills.",
+  "previewImages": ["r8remake01.png", "r8remake02.png", "r8remake03.png"],
+  "links": [],
+  "description": "I reused the car model I created few years ago and tried to redo a render to show my rendering skills. I used cycles render engine with Nvidia Denoising to render out images and I did postprocessing in photoshop. Textures are designed pocedurally using substance painter and decals are created in Photoshop."
+}

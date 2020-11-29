@@ -10,7 +10,7 @@ interface Props {
 
 export default function Achievement(props: Props) {
   const renderImages = () => {
-    return <div style={{ position: "relative" }}>
+    return <div style={{ position: "relative", marginTop: 20 }}>
       {props.images[1] && <div style={{ position: "absolute", top: 40, left: 40, zIndex: 1 }}>
         <img height="350px" src={props.images[1]} alt="" style={{
           filter: "drop-shadow( 9px 9px 8px rgba(0, 0, 0, .4))",
@@ -37,7 +37,7 @@ export default function Achievement(props: Props) {
         <div className="col-xs-12 col-sm-6">
           {renderText()}
         </div>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }} className="col-xs-12 col-sm-6">
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", overflow: "hidden", width: "100%" }} className="col-xs-12 col-sm-6">
           {renderImages()}
         </div>
       </div>
