@@ -17,7 +17,7 @@ export default function Project() {
   const currentProject = location.pathname.split("/")[3];
   // const [files, setFiles] = useState<any[]>([]);
   const [images, setImages] = useState<any[]>([]);
-
+  console.log(images);
   const renderIcon = (icon: ICON_TYPES) => {
     return <div key={icon} className="col-xs-3">
       <IconComponent
