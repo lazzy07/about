@@ -1,10 +1,10 @@
 {
   "name": "Audi R8 Remake",
   "icons": ["blender", "substance designer", "substance painter"],
-  "image": "preview.png",
-  "isVideo": false,
+  "image": "preview.mp4",
+  "isVideo": true,
   "preview": "This is a test",
-  "previewImages": [],
+  "previewImages": ["preview.png"],
   "links": [
     { "title": "Go to Github repo", "url": "https://github.com/lazzy07" }
   ],

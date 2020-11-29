@@ -100,7 +100,8 @@ export default function ProjectPreviewComponent(props: Props) {
         }}>
         <div className="row" style={{ zIndex: 2, position: "relative", transformStyle: "preserve-3d", perspective: "1000px" }}>
           <div className="col-sm-6 col-md-7 col-xs-12" style={{ overflow: "hidden", padding: 0, marginBottom: -4, zIndex: 1, display: "flex", justifyContent: "center" }}>
-            <img src={props.image} alt="" height="480px" style={{ transform: "translate(-10%,0)" }} />
+            {!props.isVideo ? <img src={props.image} alt="" height="480px" style={{ transform: "translate(-10%,0)" }} /> :
+              <video height="480px" loop muted autoPlay><source src={props.image} type="video/mp4" /></video>}
           </div>
           <div className="col-sm-6 col-md-5 col-xs-12" style={{ padding: 50, zIndex: 2 }}>
             <h1
