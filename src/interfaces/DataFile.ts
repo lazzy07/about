@@ -5,6 +5,7 @@ export interface DataFile {
   icons: ICON_TYPES[];
   image: string;
   isVideo: boolean;
+  autoPlay?: boolean;
   //preview text
   preview: string;
   //Text displayed in the project.tsx

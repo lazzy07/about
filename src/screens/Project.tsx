@@ -87,7 +87,7 @@ export default function Project() {
   }
 
   const renderCarousel = () => {
-    return <Carousel swipeable showThumbs={false} width="100%" showArrows={true}>
+    return <Carousel infiniteLoop autoPlay={projectData.autoPlay} swipeable width="100%" showArrows={true}>
       {renderPreviewImg()}
       {renderImages()}
     </Carousel>
@@ -114,7 +114,7 @@ export default function Project() {
         </div>
         <div style={{ color: defaultColors.SECONDARY_FONT_COLOR, paddingTop: "30px" }}>
           <div className="row">
-            <div className="col-sm-12 col-md-8" style={{ paddingBottom: 40 }}>
+            <div className="col-sm-12 col-md-8" style={{ paddingBottom: 40, paddingLeft: 30 }}>
               <p dangerouslySetInnerHTML={{ __html: projectData.description }}></p>
             </div>
             <div className="col-sm-12 col-md-4">
@@ -123,7 +123,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div>
+          <div style={{ paddingLeft: 30, paddingTop: 30 }}>
             {renderLinks()}
           </div>
         </div>
