@@ -1,0 +1,12 @@
+{
+  "name": "Audi R8 Remake",
+  "icons": ["blender", "substance designer", "substance painter"],
+  "image": "preview.png",
+  "isVideo": false,
+  "preview": "This is a test",
+  "previewImages": [],
+  "links": [
+    { "title": "Go to Github repo", "url": "https://github.com/lazzy07" }
+  ],
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam accusamus explicabo fugit, tempore provident, esse, nesciunt nostrum libero et distinctio voluptatem assumenda officiis sed! Aut nam odit quia autem ad. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam a eaque molestias at dolorem. Esse, deserunt? Molestias ratione velit perferendis similique est consequatur quam, culpa aperiam, doloremque odit, eveniet ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea a at tenetur nobis molestias, illo tempore autem deserunt cum dolor incidunt repudiandae architecto provident, neque mollitia qui ut. Eaque ipsa debitis nihil est illo, expedita reiciendis nostrum. Rerum minus possimus voluptatibus ipsam commodi, a assumenda sunt dicta reiciendis accusamus quo molestias inventore qui praesentium. Minima, exercitationem, hic, nihil voluptate et debitis sint quia obcaecati repellendus quo sequi quaerat non? Magnam consequuntur non asperiores doloremque? Perspiciatis a nesciunt corporis suscipit, quaerat eligendi laudantium, vero assumenda libero enim totam praesentium soluta omnis in. Possimus molestiae sunt nobis, ipsum nesciunt voluptatum magnam. Deleniti."
+}

@@ -1,5 +1,28 @@
+@import "./colors.scss";
+
+@font-face {
+  font-family: "signature";
+  src: url("./fonts/Sugar Candy.ttf");
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: $DEFAULT_BACKGROUND_COLOR;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 h1,
@@ -9,5 +32,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif !important;
 }

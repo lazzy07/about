@@ -1,0 +1,22 @@
+@keyframes anim {
+  25% {
+    transform: translateY(2%) translateZ(0);
+  }
+  75% {
+    transform: translateY(-2%) translateZ(0);
+  }
+}
+
+@keyframes anim-img {
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.anim-icon img {
+  transform: translateY(0px);
+  animation: anim-img 2s infinite both linear, anim 2s infinite both linear;
+}
