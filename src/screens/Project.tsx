@@ -72,7 +72,7 @@ export default function Project() {
 
   const renderLinks = () => {
     return projectData.links.map(e => {
-      return <Button title={e.title} onClick={() => onClickLink(e.url)} />
+      return <div style={{ padding: 10 }}><Button title={e.title} onClick={() => onClickLink(e.url)} /></div>
     })
   }
 
@@ -123,7 +123,7 @@ export default function Project() {
               </div>
             </div>
           </div>
-          <div style={{ paddingLeft: 30, paddingTop: 30 }}>
+          <div style={{ paddingLeft: 30, paddingTop: 30, display: "flex" }}>
             {renderLinks()}
           </div>
         </div>

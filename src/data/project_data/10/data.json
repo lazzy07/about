@@ -1,0 +1,16 @@
+{
+  "name": "Mud Scene",
+  "icons": [
+    "unreal engine",
+    "blender",
+    "substance painter",
+    "substance designer"
+  ],
+  "image": "mud.jpg",
+  "isVideo": false,
+  "autoPlay": true,
+  "preview": "Created using Blender Cycles, used Microdisplacement and HDRI lighting.",
+  "previewImages": ["mud01.jpg", "mud02.jpg", "mud03.jpg"],
+  "links": [],
+  "description": "The scene was rendered using Blender and HDRI lighting was used. Car paint was created using blender nodes and other textures are created using Substance Painter and Substance Designer."
+}

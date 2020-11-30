@@ -1,0 +1,20 @@
+{
+  "name": "TV Broadcast Engine",
+  "icons": ["angular", "nodejs", "mongodb", "react", "firebase"],
+  "image": "tv.jpg",
+  "isVideo": false,
+  "autoPlay": true,
+  "preview": "An application that can record scores of cricket, football or rugby",
+  "previewImages": ["tv01.jpg", "tv02.jpg", "tv03.jpg", "tv04.jpg", "tv05.jpg"],
+  "links": [
+    {
+      "title": "Cricket Github repo",
+      "url": "https://github.com/lazzy07/laz_engine"
+    },
+    {
+      "title": "Rugby & Football Github repo",
+      "url": "https://github.com/lazzy07/7s_engine"
+    }
+  ],
+  "description": "This application can be used to keep scores of sports tournaments such as cricket football and rugby. Also this application can broadcast video with TV layouts required to display scores team cards and tournament progress etc."
+}

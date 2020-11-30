@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="col-xs-12 col-sm-6" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100%", color: defaultColors.DEFAULT_BACKGROUND_COLOR }}>
           <div>
             <h1 style={{ fontSize: "1.5rem" }}>Lasantha M Senanayake</h1>
-            <h3 style={{ fontSize: "1rem" }}>No 92,<br />Kulugammana,<br /> Kandy,<br /> Sri Lanka</h3>
+
             <p style={{ fontSize: "1rem", paddingTop: 20 }}>Undergraduate, Bsc.(Hons) Computer Science</p>
           </div>
         </div>
