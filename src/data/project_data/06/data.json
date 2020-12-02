@@ -1,0 +1,13 @@
+{
+  "name": "InplaceHealth Website",
+  "icons": ["react", "nodejs", "mysql"],
+  "image": "inplace.jpg",
+  "isVideo": false,
+  "autoPlay": true,
+  "preview": "A website I created with my colleagues at C Base Labs for a foreign client",
+  "previewImages": ["inplace01.jpg", "inplace02.jpg"],
+  "links": [
+    { "title": "Go to the Website", "url": "https://app.inplacehealth.co/" }
+  ],
+  "description": "This website is to aid patients with alzheimer's disease. Website provides a questionnaire and according to answers a result page will be generated and it will show which part of their current lifestyle need to be changed. Code repository cannot be shared due to ethical reasons."
+}

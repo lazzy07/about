@@ -1,0 +1,22 @@
+{
+  "name": "Minicity Project",
+  "icons": [
+    "unreal engine",
+    "blender",
+    "substance painter",
+    "substance designer"
+  ],
+  "image": "minicity.mp4",
+  "isVideo": true,
+  "autoPlay": false,
+  "preview": "An archviz project I did for a group of students in BCAS",
+  "previewImages": [
+    "minicity01.jpg",
+    "minicity02.jpg",
+    "minicity03.jpg",
+    "minicity04.jpg",
+    "minicity05.jpg"
+  ],
+  "links": [],
+  "description": "This is an architecture visualization project I did for a group of students of BCAS, Kandy. I used unreal engine to render the scene and also I used Blender to model 3D objects, all the textures are created procedurally using Substance Designer and Substance Painter"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Procedural Texture CDN",
+  "icons": ["react", "docker", "graphql", "mongodb", "redis", "nodejs"],
+  "image": "cdn.jpg",
+  "isVideo": false,
+  "autoPlay": true,
+  "preview": "This web application can send procedurally created texture data in very small files saving bandwidth consumption",
+  "previewImages": ["cdn01.jpg", "cdn02.jpg"],
+  "links": [
+    {
+      "title": "Github repo",
+      "url": "https://github.com/lazzy07/laz_engine"
+    }
+  ],
+  "description": "This web application can be used to send procedurally created texture data in very small files saving bandwidth consumption. Project uses microservices using docker and the frontend was created using react. This web application can be connected to material designer to create procedural texture data."
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Material Designer",
+  "icons": ["cpp", "electron", "react"],
+  "image": "mdpreview.jpg",
+  "isVideo": false,
+  "preview": "Material designer can create textures that can be used in PBR workflow, even users that doesn't have coding experience can use this software",
+  "previewImages": ["md01.jpg", "md02.jpg"],
+  "autoPlay": true,
+  "links": [
+    {
+      "title": "Go to Github repo",
+      "url": "https://github.com/lazzy07/material_designer_app"
+    }
+  ],
+  "description": "Material designer can create textures that can be used in PBR workflow, even users that doesn't have coding experience can use this software because of the visual scripting language that I created, which uses OpenCV library to do image processing. Since ElectronJS created on top of Chromium engine, I was able to easily integrate code that I wrote in C++."
+}

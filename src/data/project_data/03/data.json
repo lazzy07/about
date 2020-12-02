@@ -1,0 +1,10 @@
+{
+  "name": "Audi R8 Render",
+  "icons": ["blender", "substance painter", "after effects", "premiere"],
+  "image": "preview.mp4",
+  "isVideo": true,
+  "preview": "I created Audi R8 LMS 2011 car model which is my favorite racing car!",
+  "previewImages": [],
+  "links": [],
+  "description": "I used blender to model and render the scene. I used cycles render engine to render out the scene and then using after effects and premiere, I was able to Colorgrade the video and also add camerashake to give the render a natural look. Textures are designed pocedurally using substance painter"
+}

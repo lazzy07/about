@@ -1,0 +1,20 @@
+{
+  "name": "Air Pollution Data Mapping - Kandy",
+  "icons": ["react", "react native", "firebase"],
+  "image": "pol.jpg",
+  "isVideo": false,
+  "autoPlay": true,
+  "preview": "IoT project I did with my collegues in order to map air pollution data in Kandy city area.",
+  "previewImages": [],
+  "links": [
+    {
+      "title": "Github repo",
+      "url": "https://github.com/lazzy07/laz_engine"
+    },
+    {
+      "title": "Website",
+      "url": "https://github.com/lazzy07/pollution_mapping"
+    }
+  ],
+  "description": "IoT project I did with my collegues in order to map air pollution data in Kandy city area. Data we collected have been visualized in firebase website that publically available."
+}
