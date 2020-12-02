@@ -4,7 +4,7 @@
   "image": "cdn.jpg",
   "isVideo": false,
   "autoPlay": true,
-  "preview": "This web application can be used to send procedurally created texture data in very small files saving bandwidth consumption",
+  "preview": "This web application can send procedurally created texture data in very small files saving bandwidth consumption",
   "previewImages": ["cdn01.jpg", "cdn02.jpg"],
   "links": [
     {
