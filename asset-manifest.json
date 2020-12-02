@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.5c1a60c1.chunk.css",
-    "main.js": "/about/static/js/main.8d7577b0.chunk.js",
-    "main.js.map": "/about/static/js/main.8d7577b0.chunk.js.map",
+    "main.css": "/about/static/css/main.cf3281d4.chunk.css",
+    "main.js": "/about/static/js/main.0d259004.chunk.js",
+    "main.js.map": "/about/static/js/main.0d259004.chunk.js.map",
     "runtime-main.js": "/about/static/js/runtime-main.6238d592.js",
     "runtime-main.js.map": "/about/static/js/runtime-main.6238d592.js.map",
     "static/css/2.55d8add8.chunk.css": "/about/static/css/2.55d8add8.chunk.css",
@@ -12,9 +12,9 @@
     "static/js/3.a82b0aa1.chunk.js.map": "/about/static/js/3.a82b0aa1.chunk.js.map",
     "index.html": "/about/index.html",
     "static/css/2.55d8add8.chunk.css.map": "/about/static/css/2.55d8add8.chunk.css.map",
-    "static/css/main.5c1a60c1.chunk.css.map": "/about/static/css/main.5c1a60c1.chunk.css.map",
+    "static/css/main.cf3281d4.chunk.css.map": "/about/static/css/main.cf3281d4.chunk.css.map",
     "static/js/2.02323d93.chunk.js.LICENSE.txt": "/about/static/js/2.02323d93.chunk.js.LICENSE.txt",
-    "static/media/app.scss": "/about/static/media/Sugar Candy.f0b22fb7.ttf",
+    "static/media/app.scss": "/about/static/media/Sugar_Candy.13b19a26.woff",
     "static/media/angular.png": "/about/static/media/angular.2d708291.png",
     "static/media/cdn.jpg": "/about/static/media/cdn.7e4240db.jpg",
     "static/media/cdn01.jpg": "/about/static/media/cdn01.ac6368a8.jpg",
@@ -84,7 +84,7 @@
     "static/js/runtime-main.6238d592.js",
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.02323d93.chunk.js",
-    "static/css/main.5c1a60c1.chunk.css",
-    "static/js/main.8d7577b0.chunk.js"
+    "static/css/main.cf3281d4.chunk.css",
+    "static/js/main.0d259004.chunk.js"
   ]
 }
