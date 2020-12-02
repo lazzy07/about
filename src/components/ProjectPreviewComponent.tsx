@@ -44,7 +44,7 @@ export default function ProjectPreviewComponent(props: Props) {
 
       const cref = cardRef.current;
       const effectPowerX = 90;
-      const effectPowerY = 180;
+      const effectPowerY = 280;
 
       const xAxis = (window.innerWidth / 2 - e.pageX) / effectPowerX;
       const yAxis = (window.innerHeight / 2 - e.pageY) / effectPowerY;
@@ -98,7 +98,7 @@ export default function ProjectPreviewComponent(props: Props) {
           borderRadius: "80px 20px 80px 20px",
           overflow: "hidden"
         }}>
-        <div className="row" style={{ zIndex: 2, position: "relative", transformStyle: "preserve-3d", perspective: "1000px" }}>
+        <div className="row" style={{ zIndex: 2, position: "relative", transformStyle: "preserve-3d", perspective: "2000px" }}>
           <div className="col-sm-6 col-md-7 col-xs-12" style={{ overflow: "hidden", padding: 0, marginBottom: -4, zIndex: 1, display: "flex", justifyContent: "center" }}>
             {!props.isVideo ? <img src={props.image} alt="" height="480px" style={{ transform: "translate(-10%,0)" }} /> :
               <video style={{ height: "100%" }} loop muted autoPlay><source src={props.image} type="video/mp4" /></video>}
